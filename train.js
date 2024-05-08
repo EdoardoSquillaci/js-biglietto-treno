@@ -13,6 +13,7 @@ const scontoMinori = (prezzoBiglietto * 20) / 100
 const scontoSenior = (prezzoBiglietto * 40) / 100
 
 
+
 if(etaUtente<18){
     prezzoBiglietto = prezzoBiglietto - scontoMinori
     console.log (prezzoBiglietto)
