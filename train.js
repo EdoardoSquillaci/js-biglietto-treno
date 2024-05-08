@@ -27,6 +27,7 @@ else{
     console.log (prezzoBiglietto)
 }
 
+prezzoBiglietto = prezzoBiglietto.toFixed(2)
 
 document.getElementById ('km').innerHTML = kmDaPercorrere
 
