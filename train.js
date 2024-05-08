@@ -2,11 +2,11 @@
 
 
 
-const kmDaPercorrere = (Number(prompt ('Inserisci i km da percorrere...'))); 
+const kmDaPercorrere = Math.round(Number(prompt ('Inserisci i km da percorrere...'))); 
 
-const etaUtente = parseInt(Number(prompt ('Inserisci la tua età...')));
+const etaUtente = Math.floor(Number(prompt ('Inserisci la tua età...')));
 
-let prezzoBiglietto = kmDaPercorrere * 0.21;
+let prezzoBiglietto = (Number (kmDaPercorrere * 0.21));
 
 const scontoMinori = (prezzoBiglietto * 20) / 100
 
@@ -18,7 +18,7 @@ if(etaUtente<18){
     console.log (prezzoBiglietto)
 }
 
-else if (etaUtente>65){
+else if (etaUtente>64){
     prezzoBiglietto = prezzoBiglietto - scontoSenior
     console.log (prezzoBiglietto)
 }
